@@ -10,7 +10,12 @@ public class TemperatureConverterTest {
     }
     @Test
     void FahrenheitToCelsius_212fahrenheit_return100(){
-        TemperatureConverter converter2 = new TemperatureConverter();
-        assertEquals(100.0, converter2.fahrenheitToCelsius(212));
+        TemperatureConverter converter = new TemperatureConverter();
+        assertEquals(100.0, converter.fahrenheitToCelsius(212));
+    }
+    @Test
+    void celsiusToKelvin_zeroCelsius_returns273Point15() {
+        TemperatureConverter converter = new TemperatureConverter();
+        assertEquals(273.15, converter.celsiusToKelvin(0.0));
     }
 }
