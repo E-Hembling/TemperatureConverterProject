@@ -7,7 +7,7 @@ public class TemperatureConverter {
         return (fahrenheit - 32) * (5.0 / 9.0);
     }
     public double celsiusToKelvin(double celsius) {
-        return 0.0;
+        return celsius + 273.15;
     }
 
 }
